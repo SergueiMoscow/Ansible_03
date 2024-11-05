@@ -1,0 +1,18 @@
+services:
+  clickhouse:
+    build:
+      dockerfile: Dockerfile
+    container_name: clickhouse_c
+    command: sleep infinity
+  vector:
+    build:
+      dockerfile: Dockerfile
+    container_name: vector_c
+    command: sleep infinity
+  lighthouse:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    container_name: lighthouse_c
+    command: sleep infinity

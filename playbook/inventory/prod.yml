@@ -1,0 +1,24 @@
+clickhouse:
+  hosts:
+#    clickhouse_c:
+#      ansible_connection: docker
+    clickhouse_yc:
+      ansible_host: 84.201.156.210
+      ansible_user: vm_user
+
+
+vector:
+  hosts:
+#    vector_c:
+#      ansible_connection: docker
+    vector_yc:
+      ansible_host: 62.84.114.147
+      ansible_user: vm_user
+
+lighthouse:
+  hosts:
+#    lighthouse_c:
+#      ansible_connection: docker
+    lighthouse_yc:
+      ansible_host: 51.250.12.183
+      ansible_user: vm_user
